@@ -80,7 +80,7 @@ const Login: React.FC = () => {
         <LoginForm
           logo={<img alt="logo" src="/logo.svg" />}
           title="蛋糕预定系统"
-          subTitle={"欢迎使用蛋糕预定系统"}
+          subTitle={'欢迎使用蛋糕预定系统'}
           initialValues={{
             autoLogin: true,
           }}
@@ -98,12 +98,12 @@ const Login: React.FC = () => {
           {type === 'account' && (
             <>
               <ProFormText
-                name="username"
+                name="userAccount"
                 fieldProps={{
                   size: 'large',
                   prefix: <UserOutlined className={styles.prefixIcon} />,
                 }}
-                placeholder={'请输入账户和密码'}
+                placeholder={'请输入账户'}
                 rules={[
                   {
                     required: true,
@@ -112,7 +112,7 @@ const Login: React.FC = () => {
                 ]}
               />
               <ProFormText.Password
-                name="password"
+                name="userPassword"
                 fieldProps={{
                   size: 'large',
                   prefix: <LockOutlined className={styles.prefixIcon} />,
@@ -141,9 +141,9 @@ const Login: React.FC = () => {
               style={{
                 float: 'right',
               }}
-              href='#'
-              target='_blank'
-              rel='noreferrer'
+              href="#"
+              target="_blank"
+              rel="noreferrer"
             >
               忘记密码 ?
             </a>
