@@ -12,7 +12,7 @@ declare namespace API {
     email?: string;
     userStatus?: number;
     createTime?: Date;
-    userRoles?: number;
+    userRole?: number;
     // name?: string;
     // avatar?: string;
     // userid?: string;
