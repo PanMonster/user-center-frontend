@@ -33,6 +33,16 @@ declare namespace API {
     // phone?: string;
   };
 
+  /**
+   * 通用返回类
+   */
+  type BaseResponse<T> = {
+    code: number;
+    message: string;
+    data: T;
+    description: string;
+  };
+
   type LoginResult = {
     status?: string;
     type?: string;
